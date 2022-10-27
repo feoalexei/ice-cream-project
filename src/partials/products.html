@@ -7,9 +7,9 @@
 
   <ul class="products-list">
     <li class="products-item">
-<div class="product--circle-green"></div>
+      <div class="product--circle-green"></div>
       <div class="product--foto-container">
-        
+
         <picture class="products--foto">
           <source class="products--foto" srcset="
               /src/images/product/ice-cream.jpg 1x,
@@ -22,7 +22,7 @@
               /src/images/product/mobile/ice-cream-mobile-2x.jpg 2x" media="(min-width:480px)" />
           <img class="products--foto" src="/src/images/product/ice-cream.jpg" alt="Three ice-cream balls">
         </picture>
-       
+
       </div>
       <h2 class="products-names">ice cream</h2>
       <p class="products-about">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
@@ -31,7 +31,7 @@
       <a href="" class="products_arrow"><img src="/src/images/product/product-arrow.png" alt=""></a>
     </li>
     <li class="products-item">
-        <div class="product--circle-yellow"></div>
+      <div class="product--circle-yellow"></div>
       <div class="product--foto-container">
         <picture>
           <source srcset="
@@ -55,7 +55,7 @@
 
     </li>
     <li class="products-item">
-        <div class="product--circle-orange"></div>
+      <div class="product--circle-orange"></div>
       <div class="product--foto-container">
         <picture>
           <source srcset="
@@ -82,52 +82,63 @@
 
 
   <!--------------------------------------------------Modal widow----------------------------------->
-  <!-- Close button-->
-  <!-- <button type="button" class="products--modal-close" data-modal-close>
-    <svg class="close__logo">
-      <use href=""></use>
-    </svg>
 
-    <h4 class="modal--product-title">Chololate icecream</h4>
-    <picture>
-      <source>
-      <source>
-      <source>
-      <img src="" alt="">
-    </picture>
-    <ul class="modal--consist-list">
-      <li>kcal</li>
-      <li>Protein...</li>
-      <li>Fats</li>
-      <li>Carbs</li>
-    </ul>
+  <div class="product--modal">
+    <div class="product--modal__container">
+      <!------------------ Close button ----------------->
+      <button type="button" class="products--modal-close" data-modal-close>
+        <svg class="close__logo">
+          <use href="/src/images/product/close-cross.svg"></use>
+        </svg> </button>
 
-    <h5 class="modal--ingredients-title">Ingredients</h5>
-    <li>Milk 100ml</li>
-    <li>Belgian chocolate 20g</li>
-    <li>Cream 150 ml</li>
-    <li>Cocoa powder 30g</li>
-    <li>Sugar 40g</li>
-    <li>Vanilla sugar 10g</li> -->
+      <!---------------- Modal screen --------->
+      <h4 class="modal--product-title">Chololate icecream</h4>
+      <picture>
+        <source />
+        <source />
+        <source />
+        <img src="" alt="">
+      </picture>
+      <ul class="modal--consist-list">
+        <li>kcal</li>
+        <li>Protein...</li>
+        <li>Fats</li>
+        <li>Carbs</li>
+      </ul>
 
-  <!-- Modal form -->
-  <!-- <form action="" class="modal--ingredients-form" autocomplete="off">
+      <h5 class="modal--ingredients-title">Ingredients</h5>
+      <ul>
+        <li>Milk 100ml</li>
+        <li>Belgian chocolate 20g</li>
+        <li>Cream 150 ml</li>
+        <li>Cocoa powder 30g</li>
+        <li>Sugar 40g</li>
+        <li>Vanilla sugar 10g</li>
+      </ul>
 
-      <div class="products--form-field">
-        <label class="form__label" for="name" autofocus>Ім'я</label>
-        <input class="form__input" type="text" name="name" id="name" placeholder="Name" />
-      </div>
-      <div class="products--form-field">
-        <label class="form__label" for="tel">Телефон</label>
-        <input class="form__input" type="tel" name="tel" id="tel" placeholder="Phone" />
-      </div>
 
-      <div class="products--form-field">
-        <label class="form__label" for="comment">Коментар</label>
-        <textarea class="form__area" type="text" name="comment" id="comment" rows="10" placeholder="Comment">
+      <form action="" class="modal--ingredients-form" autocomplete="off">
+
+        <div class="products--form-field">
+          <label class="form__label" for="name" autofocus>Ім'я</label>
+          <input class="form__input" type="text" name="name" id="name" placeholder="Name" />
+        </div>
+        <div class="products--form-field">
+          <label class="form__label" for="tel">Телефон</label>
+          <input class="form__input" type="tel" name="tel" id="tel" placeholder="Phone" />
+        </div>
+
+        <div class="products--form-field">
+          <label class="form__label" for="comment">Коментар</label>
+          <textarea class="form__area" type="text" name="comment" id="comment" rows="10" placeholder="Comment">
           </textarea>
-      </div>
+        </div>
 
-      <button class="modal__button" type="submit">Submit</button>
-    </form>
-</section> -->
+        <button class="modal__button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+</section>

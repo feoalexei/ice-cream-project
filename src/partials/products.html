@@ -1,4 +1,5 @@
-<section class="products">
+<!----------------------------------------Product section ----------------------------------------------->
+<section class="products products-background">
   <p class="products-pretittle">
     100% natural
   </p>
@@ -6,49 +7,127 @@
 
   <ul class="products-list">
     <li class="products-item">
-      <picture class="products_pictures">
-        <source class="products_picture" srcset="src/images/" />
-        <source class="products_picture" srcset="src/images/" />
-        <source class="products_picture" srcset="src/images/" />
-        <img src="/src/images/product/ice-coffe.jpg" alt="Three ice-cream balls">
-      </picture>
+<div class="product--circle-green"></div>
+      <div class="product--foto-container">
+        
+        <picture class="products--foto">
+          <source class="products--foto" srcset="
+              /src/images/product/ice-cream.jpg 1x,
+              /src/images/product/ice-cream-2x.jpg 2x" media="(min-width:1200px)" />
+          <source class="products--foto" srcset="
+              /src/images/product/tablet/ice-cream-tablet.jpg 1x,
+              /src/images/product/tablet/ice-cream-tablet-2x.jpg 2x" media="(min-width:768px)" />
+          <source class="products--foto" srcset="
+              /src/images/product/mobile/ice-cream-mobile.jpg 1x,
+              /src/images/product/mobile/ice-cream-mobile-2x.jpg 2x" media="(min-width:480px)" />
+          <img class="products--foto" src="/src/images/product/ice-cream.jpg" alt="Three ice-cream balls">
+        </picture>
+       
+      </div>
       <h2 class="products-names">ice cream</h2>
       <p class="products-about">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
         stabilizer
       </p>
-      <a href="" class="products_arrow"></a>
+      <a href="" class="products_arrow"><img src="/src/images/product/product-arrow.png" alt=""></a>
     </li>
     <li class="products-item">
-      <picture class="products_pictures">
-        <source class="products_picture" srcset="src/images/" />
-        <source class="products_picture" srcset="src/images/" />
-        <source class="products_picture" srcset="src/images/" />
-        <img src="/src/images/product/ice-coffe.jpg" alt="Cold coffe in a glass cup">
-      </picture>
+        <div class="product--circle-yellow"></div>
+      <div class="product--foto-container">
+        <picture>
+          <source srcset="
+              /src/images/product/ice-coffe.jpg 1x,
+              /src/images/product/ice-coffe2x.jpg 2x" media="(min-width:1200px)" />
+          <source srcset="
+              /src/images/product/tablet/ice-coffe-tablet.jpg 1x,
+              /src/images/product/tablet/ice-coffe-tablet-2x.jpg 2x" media="(min-width:768px)" />
+          <source srcset="
+              /src/images/product/mobile/ice-coffe-mobile.jpg 1x,
+              /src/images/product/mobile/ice-coffe-mobile-2x.jpg 2x" media="(min-width:480px)" />
+          <img class="products--foto" src="/src/images/product/ice-coffe.jpg" alt="Three ice-cream balls">
+        </picture>
+      </div>
+
       <h2 class="products-names">ice coffee</h2>
       <p class="products-about">Fragrant invigorating drink created from 100% natural ingredients without the use of
         preservatives and flavor enhancers
       </p>
-      <a href="" class="products_arrow"></a>
+      <a href="" class="products_arrow"><img src="/src/images/product/product-arrow.png" alt=""></a>
+
     </li>
     <li class="products-item">
-      <picture class="products_pictures">
-        <source class="products_picture" srcset="src/images/" />
-        <source class="products_picture" srcset="src/images/" />
-        <source class="products_picture" srcset="src/images/" />
-        <img src="/src/images/product/ice-coffe.jpg" alt="One big milkshake cup">
-      </picture>
+        <div class="product--circle-orange"></div>
+      <div class="product--foto-container">
+        <picture>
+          <source srcset="
+              /src/images/product/milkshakes.jpg 1x,
+              /src/images/product/milkshakes-2x.jpg 2x" media="(min-width:1200px)" />
+          <source srcset="
+              /src/images/product/tablet/milkshakes-tablet.jpg 1x,
+              /src/images/product/tablet/milkshakes-tablet-2x.jpg 2x" media="(min-width:768px)" />
+          <source srcset="
+              /src/images/product/mobile/milkshakes-mobile.jpg 1x,
+              /src/images/product/mobile/milkshakes-mobile-2x.jpg 2x" media="(min-width:480px)" />
+          <img class="products--foto" src="/src/images/product/milkshakes.jpg" alt="Big cup with milkshake">
+        </picture>
+      </div>
       <h2 class="products-names">milkshakes</h2>
-      <p class="products-about">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and
+      <p class="products-about">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries
+        and
         other sweets of your choice
       </p>
-      <a href="" class="products_arrow"></a>
+      <a href="" class="products_arrow"><img src="/src/images/product/product-arrow.png" alt=""></a>
+
     </li>
   </ul>
 
 
+  <!--------------------------------------------------Modal widow----------------------------------->
+  <!-- Close button-->
+  <!-- <button type="button" class="products--modal-close" data-modal-close>
+    <svg class="close__logo">
+      <use href=""></use>
+    </svg>
 
+    <h4 class="modal--product-title">Chololate icecream</h4>
+    <picture>
+      <source>
+      <source>
+      <source>
+      <img src="" alt="">
+    </picture>
+    <ul class="modal--consist-list">
+      <li>kcal</li>
+      <li>Protein...</li>
+      <li>Fats</li>
+      <li>Carbs</li>
+    </ul>
 
+    <h5 class="modal--ingredients-title">Ingredients</h5>
+    <li>Milk 100ml</li>
+    <li>Belgian chocolate 20g</li>
+    <li>Cream 150 ml</li>
+    <li>Cocoa powder 30g</li>
+    <li>Sugar 40g</li>
+    <li>Vanilla sugar 10g</li> -->
 
+  <!-- Modal form -->
+  <!-- <form action="" class="modal--ingredients-form" autocomplete="off">
 
-</section>
+      <div class="products--form-field">
+        <label class="form__label" for="name" autofocus>Ім'я</label>
+        <input class="form__input" type="text" name="name" id="name" placeholder="Name" />
+      </div>
+      <div class="products--form-field">
+        <label class="form__label" for="tel">Телефон</label>
+        <input class="form__input" type="tel" name="tel" id="tel" placeholder="Phone" />
+      </div>
+
+      <div class="products--form-field">
+        <label class="form__label" for="comment">Коментар</label>
+        <textarea class="form__area" type="text" name="comment" id="comment" rows="10" placeholder="Comment">
+          </textarea>
+      </div>
+
+      <button class="modal__button" type="submit">Submit</button>
+    </form>
+</section> -->

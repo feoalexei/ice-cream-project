@@ -26,8 +26,8 @@ body {
     }
     @include tablet {
         width: 768px;
-        padding-right: 24px;
-        padding-left: 24px;
+        padding-right: 32px;
+        padding-left: 32px;
     }
     @include desktop {
         width: 1200px;

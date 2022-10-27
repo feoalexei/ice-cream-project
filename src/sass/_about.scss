@@ -1,5 +1,5 @@
-.section {
-  padding: 60px 0;
+.about {
+  padding-top: 60px;
 }
 
 .about {
@@ -73,7 +73,8 @@
   display: flex;
   align-items: center;
   padding: 12px 34px;
-  margin: 42px auto 0;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 14px;
   font-family: 'Montserrat';
   font-weight: 600;
@@ -100,4 +101,8 @@
   &-arrow-icon {
     margin-left: 9px;
   }
+}
+
+.about__btn {
+  margin: 20px auto 42px;
 }

@@ -1,0 +1,73 @@
+@include mobile {
+}
+
+.contacts {
+  // background-color: rgb(0, 89, 255);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  color: #131313;
+}
+
+.contacts__container {
+  width: 100%;
+}
+
+.contacts__wrap1 {
+  //   display: flex;
+  // background-color: rgb(255, 94, 0);
+  display: block;
+  width: 100%;
+}
+
+.contacts__wrap2 {
+  //   display: flex;
+  // background-color: rgb(255, 0, 140);
+  display: block;
+  width: 100%;
+}
+
+.contacts__wrap3 {
+  //   display: flex;
+  // background-color: rgb(0, 255, 76);
+  display: block;
+  width: 100%;
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__item {
+  //   display: flex;
+  background-color: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__title {
+  background-color: #f8d24e;
+  border-radius: 4px;
+  color: #131313;
+  text-transform: uppercase;
+}
+.contacts__city {
+  color: #131313;
+}
+// .contacts__street {
+// }
+.contacts__weekdays {
+  color: #131313;
+}
+// .contacts__worktime {
+// }
+// .contacts__link {
+// }

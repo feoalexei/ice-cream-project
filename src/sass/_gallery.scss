@@ -1,0 +1,78 @@
+.gallery {
+  width: 100%;
+  background-image: url(../images/gallery/icecreambg.jpg);
+  height: 600px;
+  position: relative;
+  top: 70%;
+  left: 0%;
+  z-index: 1;
+}
+
+.gallery-title {
+  color: $title-text-color;
+}
+
+.gallery-list {
+  width: 100%;
+  height: 130px;
+
+  // border: 3px solid #212121;
+  // border-radius: 10px;
+  // padding: 0;
+}
+.image {
+  border: 1px solid transparent;
+  width: 100%;
+  border-radius: 7px;
+
+  // @include tablet {
+  //   max-width: 768px;
+  // }
+  // @include desktop {
+  //   max-width: 1200px;
+  // }
+}
+
+.gallery-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.castomer-item {
+  position: absolute;
+}
+
+.double {
+}
+
+.castomer-wrap {
+}
+
+.castomer-item {
+  width: 100;
+  // height: 130px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: $accent-color;
+}
+
+.castomer-list {
+  position: relative;
+}
+
+.castomer-image {
+  top: -10%;
+  right: 25%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.castomer-text {
+  margin: 25px;
+}
+
+.castomer-name {
+  text-align: center;
+  margin-top: 30px;
+}

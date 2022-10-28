@@ -1,41 +1,69 @@
-<section class="gallery">
-  <h2>Gallery</h2>
-  <div class="swiper mySwiper wrapper">
-    <ul class="list swiper-wrapper">
-      <li class="item blue swiper-slide">1</li>
-      <li class="item red swiper-slide">2</li>
-      <li class="item brown swiper-slide">3</li>
-    </ul>
-  </div>
-</section>
+<div class="double">
+  <section class="gallery container">
+    <div class="swiper mySwiper gallery-wrapper">
+      <ul class="gallery-list swiper-wrapper">
+        <li class="gallery-image swiper-slide">
+          <img
+            class="image"
+            src="./images/gallery/gallery1.jpg"
+            alt="Foto Ice cream with bilberry"
+          />
+        </li>
+        <li class="gallery-image swiper-slide">
+          <img
+            class="fff"
+            src="./images/gallery/gallery1.jpg"
+            alt="Foto Ice cream with strawberry"
+          />
+        </li>
+        <li class="gallery-image swiper-slide">
+          <img
+            class="fff"
+            src="./images/gallery/gallery1.jpg"
+            alt="Foto Ice cream with sugar decoration"
+          />
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<section class="castomer">
-  <div class="swiper mySw castomer-box">
-    <ul class="castomer-list swiper-wrapper">
-      <li class="swiper-slide">
-        <img src="../images/gallery/gallery1.jpg" />
-        I love visiting your cafe. You prepare the most delicious ice cream in
-        Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-        and polite staff.
-      </li>
-      <li class="item red swiper-slide">2</li>
-      <li class="item brown swiper-slide">3</li>
-    </ul>
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper('.mySwiper', {
-    autoplay: true,
-  });
-</script>
-<script>
-  var swiper = new Swiper('.mySw', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-</script>
+  <section class="castomer container">
+    <article class="swiper mySw castomer-article">
+      <ul class="castomer-list swiper-wrapper">
+        <li class="castomer-item swiper-slide">
+          <div class="castomer-wrap">
+            <img class="castomer-image" src="./images/gallery/fotoEmily.jpg" />
+            <p class="castomer-text">
+              I love visiting your cafe. You prepare the most delicious ice
+              cream in Los Angeles! In addition, you have beautiful serving,
+              cozy atmosphere and polite staff.
+            </p>
+            <p class="castomer-name">Emily, Los Angeles</p>
+          </div>
+        </li>
+        <li class="castomer-item swiper-slide">
+          <div class="castomer-wrap">
+            <img class="castomer-image" src="./images/gallery/fotoSam.jpg" />
+            <p class="castomer-text">
+              I love eating popsicles on a hot day. Yours is always delicious. I
+              recommend your cafe to everyone I know.
+            </p>
+            <p class="castomer-name">Sam, Los Angeles</p>
+          </div>
+        </li>
+        <li class="castomer-item swiper-slide">
+          <div class="castomer-wrap">
+            <img class="castomer-image" src="./images/gallery/fotoDiana.jpg" />
+            <p class="castomer-text">
+              Ice cream is my passion! I love your chocolate hazelnut ice cream!
+              And I really like the excellent service - always served politely
+              and quickly!
+            </p>
+            <p class="castomer-name">Diana, Chicago</p>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </article>
+  </section>
+</div>

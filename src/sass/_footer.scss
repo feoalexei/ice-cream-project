@@ -1,0 +1,53 @@
+.footer {
+    // padding: 60px 15px;
+    background-color: $background-color;
+}
+.container--footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.footer__wrap {
+    text-align: left;
+}
+
+.footer__pretitle {
+    color: $primary-text-color;
+    font-style: 700;
+    font-size: 18px;
+    line-height: 1.22;
+}
+
+.footer__title {
+    color: $primary-text-color;
+    font-style: 700;
+    font-size: 34px;
+    line-height: 1.20;
+
+}
+
+.footer__info {
+    text-align: right;
+}
+
+.footer__text {
+    color: $title-text-color;
+    font-style: 700;
+    font-size: 12px;
+    line-height: 1.83;
+
+}
+.footer_tel {
+    color: $title-text-color;
+    font-style: 700;
+    font-size: 12px;
+    line-height: 1.83;
+
+}
+.footer__inner {
+    color: #7A7A7A;
+    font-style: 700;
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,5 +1,7 @@
 .footer {
     // padding: 60px 15px;
+    padding-top: 40px;
+    padding-bottom: 60px;
     background-color: $background-color;
 }
 .container--footer {
@@ -10,13 +12,17 @@
 
 .footer__wrap {
     text-align: left;
+    width: 100%;
+    max-width: 234px;
 }
 
 .footer__pretitle {
+    margin-bottom: 16px;
     color: $primary-text-color;
     font-style: 700;
     font-size: 18px;
     line-height: 1.22;
+    text-transform: uppercase;
 }
 
 .footer__title {
@@ -24,12 +30,15 @@
     font-style: 700;
     font-size: 34px;
     line-height: 1.20;
+    text-transform: uppercase;
 
 }
 
 .footer__info {
+    display: block;
     text-align: right;
 }
+
 
 .footer__text {
     color: $title-text-color;

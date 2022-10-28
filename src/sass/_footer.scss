@@ -8,30 +8,98 @@
     display: block;
     text-align: center;
     width: 100%;
+    
+
+    @include mobile {
+        max-width: 480px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include tablet {
+        max-width: 768px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    @include desktop {
+        max-width: 1200px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+}
+
+.footer__item {
+    padding-right: 20px;
+    padding-left: 20px;
+    @include tablet {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+    @include desktop {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    
+
 }
 
 .footer__wrap {
     text-align: left;
     width: 100%;
-    max-width: 234px;
+    max-width: 237px;
     margin-bottom: 42px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+    @include desktop {
+        margin-bottom: 54px;
+        max-width: 504px;
+    }
 }
 
 .footer__pretitle {
     margin-bottom: 16px;
     color: $primary-text-color;
-    font-style: 700;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
     text-transform: uppercase;
+
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.23;
+        margin-bottom: 9px;
+    }
+    @include desktop {
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 14px;
+    }
 }
 
 .footer__title {
     color: $primary-text-color;
-    font-style: 700;
+    font-weight: 700;
     font-size: 34px;
     line-height: 1.20;
     text-transform: uppercase;
+
+    @include tablet {
+        font-size: 48px;
+        line-height: 1.22;
+    }
+    @include desktop {
+        font-size: 58px;
+    }
 
 }
 
@@ -39,26 +107,58 @@
     display: block;
     text-align: right;
     margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.83;
+    white-space: nowrap;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.86;
+        margin-bottom: 56px;
+    }
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.85;
+        margin-bottom: 60px;
+    }
 }
 
 
 .footer__text {
     color: $title-text-color;
-    font-style: 700;
-    font-size: 12px;
-    line-height: 1.83;
-
 }
+
 .footer_tel {
-    color: $title-text-color;
-    font-style: 700;
-    font-size: 12px;
-    line-height: 1.83;
-
+    color: $primary-text-color;
 }
+
 .footer__inner {
     color: #7A7A7A;
-    font-style: 700;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
+    border-top: 1px solid rgba(225, 225, 225, 1);
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.86;
+        display: flex;
+        padding-top: 14px;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    @include desktop {
+        font-size: 12px;
+        line-height: 1.83;
+    }
+}
+
+.footer__name {
+    padding-top: 16px;
+    margin: 0;
+
+    @include tablet {
+        padding-right: 6px;
+    }
 }

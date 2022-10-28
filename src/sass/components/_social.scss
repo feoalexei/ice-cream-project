@@ -1,10 +1,18 @@
 .social {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     // margin-top: 20px;
     margin-bottom: 38px;
     gap: 28px;
+
+    @include tablet {
+        gap: 30px;
+        margin-bottom: 32px;
+    }
+    @include desktop{
+        margin-bottom: 40px;
+    }
 }
 
 .social__item {

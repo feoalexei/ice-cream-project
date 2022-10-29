@@ -1,164 +1,172 @@
 .footer {
-    // padding: 60px 15px;
+    position: relative;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
     background-color: $background-color;
-}
-.container--footer {
-    display: block;
-    text-align: center;
-    width: 100%;
-    
 
-    @include mobile {
-        max-width: 480px;
+    &__container {
+        display: block;
+        text-align: center;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        
+        @include mobile {
+            max-width: 480px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include tablet {
+            max-width: 768px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include desktop {
+            max-width: 1200px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-    @include tablet {
-        max-width: 768px;
+
+    &__item {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 40px;
+
+        @include tablet {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-right: 32px;
+            padding-left: 32px;
+        }
+        @include desktop {
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+    }
+
+    &__wrap {
+        text-align: left;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        height: 134px;
+        max-width: 237px;
+        margin-bottom: 42px;
     
-    
-    @include desktop {
-        max-width: 1200px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        @include tablet {
+            margin-bottom: 32px;
+        }
+        @include desktop {
+            margin-bottom: 54px;
+            max-width: 504px;
+        }
     }
-   
-}
 
-.footer__item {
-    padding-right: 20px;
-    padding-left: 20px;
-    @include tablet {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
-    @include desktop {
-        padding-right: 16px;
-        padding-left: 16px;
-    }
-    
-
-}
-
-.footer__wrap {
-    text-align: left;
-    width: 100%;
-    max-width: 237px;
-    margin-bottom: 42px;
-
-    @include tablet {
-        margin-bottom: 32px;
-    }
-    @include desktop {
-        margin-bottom: 54px;
-        max-width: 504px;
-    }
-}
-
-.footer__pretitle {
-    margin-bottom: 16px;
-    color: $primary-text-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
-    text-transform: uppercase;
-
-    @include tablet {
-        font-size: 26px;
-        line-height: 1.23;
-        margin-bottom: 9px;
-    }
-    @include desktop {
-        font-weight: 400;
-        font-size: 30px;
-        margin-bottom: 14px;
-    }
-}
-
-.footer__title {
-    color: $primary-text-color;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 1.20;
-    text-transform: uppercase;
-
-    @include tablet {
-        font-size: 48px;
+    &__pretitle {
+        margin-bottom: 16px;
+        color: $primary-text-color;
+        font-weight: 700;
+        font-size: 18px;
         line-height: 1.22;
+        text-transform: uppercase;
+    
+        @include tablet {
+            font-size: 26px;
+            line-height: 1.23;
+            margin-bottom: 9px;
+        }
+        @include desktop {
+            font-weight: 400;
+            font-size: 30px;
+            margin-bottom: 14px;
+        }
     }
-    @include desktop {
-        font-size: 58px;
+
+    &__title {
+        color: $primary-text-color;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.20;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        @include tablet {
+            font-size: 48px;
+            line-height: 1.22;
+        }
+        @include desktop {
+            font-size: 58px;
+        }
     }
 
-}
-
-.footer__info {
-    display: block;
-    text-align: right;
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.83;
-    white-space: nowrap;
-
-    @include tablet {
-        font-size: 14px;
-        line-height: 1.86;
-        margin-bottom: 56px;
-    }
-    @include desktop {
-        font-size: 16px;
-        line-height: 1.85;
-        margin-bottom: 60px;
-    }
-}
-
-
-.footer__text {
-    color: $title-text-color;
-}
-
-.footer_tel {
-    color: $primary-text-color;
-}
-
-.footer__inner {
-    color: #7A7A7A;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
-    border-top: 1px solid rgba(225, 225, 225, 1);
-
-    @include tablet {
-        font-size: 14px;
-        line-height: 1.86;
-        display: flex;
-        padding-top: 14px;
-        align-items: flex-end;
-        justify-content: center;
-    }
-    @include desktop {
+    &__info {
+        display: block;
+        text-align: right;
+       
+        font-weight: 700;
         font-size: 12px;
         line-height: 1.83;
+        white-space: nowrap;
+    
+        @include tablet {
+            font-size: 14px;
+            line-height: 1.86;
+            margin-bottom: 56px;
+        }
+        @include desktop {
+            font-size: 16px;
+            line-height: 1.85;
+            margin-bottom: 60px;
+        }
     }
-}
 
-.footer__name {
-    padding-top: 16px;
-    margin: 0;
+    &__text {
+        color: $title-text-color;
+    }
 
-    @include tablet {
-        padding-right: 6px;
+    &__tel {
+        color: $primary-text-color;
+    }
+
+    &__line {
+        position: absolute;
+        display: block;
+        bottom: 100px;
+        left: 0;
+        width: 100vw;
+        height: 2px;
+        background-color: $primary-text-color;
+        margin-bottom: 16px;
+        transform: translateY(100%);
+
+        }
+
+    &__inner {
+        color: #7A7A7A;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+    
+        @include tablet {
+            font-size: 14px;
+            line-height: 1.86;
+            display: flex;
+            padding-top: 14px;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        @include desktop {
+            font-size: 12px;
+            line-height: 1.83;
+        }
+    }
+
+    &__name {
+       
+    
+        @include tablet {
+            padding-right: 6px;
+        }
     }
 }

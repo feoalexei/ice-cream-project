@@ -82,58 +82,104 @@
 
   <!--------------------------------------------------Modal widow----------------------------------->
 
-  <div class="product--modal" data-products-modal>
-    <div class="product--modal__container">
+  <div class="product-modal" data-products-modal>
+    <div class="product-modal__container">
       <!------------------ Close button ----------------->
-      <button type="button" class="products--modal-close" data-products-modal-close]>
-        <svg class="close__logo">
-          <use href="/src/images/product/close-cross.svg"></use>
+
+      <div class="product-modal__wrap">
+        <h4 class="product-modal__title">Chololate icecream</h4>
+        <button type="button" class="product-modal__close" data-products-modal-close>
+          <svg  width="11px" height="11px">
+            <use href="./images/icons.svg#icon-off"></use>
+        </svg>
         </svg> </button>
-
+      </div>
       <!---------------- Modal screen --------->
-      <h4 class="modal--product-title">Chololate icecream</h4>
-      <picture>
-        <source />
-        <source />
-        <source />
-        <img src="#" alt="">
+      
+      <div class="product-modal__circle-green"></div>
+ <div class="product-modal__img">
+      <picture class="product-modal__foto">
+        <source srcset="
+            /src/images/product/modal/ice-modal.jpg 1x,
+            /src/images/product/modal/ice-modal-2x.jpg 2x" media="(min-width:1200px)" />
+        <source srcset="
+            /src/images/product/modal/ice-modal.jpg 1x,
+            /src/images/product/modal/ice-modal-2x.jpg 2x" media="(min-width:768px)" />
+        <source srcset="
+          ./images/product/modal/ice-modal-mobile.jpg 1x,
+            /src/images/product/modal/ice-modal-mobile-2x.jpg 2x" media="(min-width:480px)" />
+        <img class="products--foto" src="./images/product/modal/ice-modal.jpg" alt="Big cup with milkshake">
       </picture>
-      <ul class="modal--consist-list">
-        <li>kcal</li>
-        <li>Protein...</li>
-        <li>Fats</li>
-        <li>Carbs</li>
+    </div>
+
+      <div class="product-chekbox"> 
+
+        <input class="product-chekbox__input" type="checkbox" name="topic" id="topic" />
+        <label for="topic" class="product-chekbox__label"></label> 
+        <input class="product-chekbox__input" type="checkbox" name="topic" id="topic" />
+        <label for="topic" class="product-chekbox__label"></label> 
+        <input class="product-chekbox__input" type="checkbox" name="topic" id="topic" />
+        <label for="topic" class="product-chekbox__label"></label> 
+        <input class="product-chekbox__input" type="checkbox" name="topic" id="topic" />
+        <label for="topic" class="product-chekbox__label"></label> 
+     
+      </div>
+        
+    
+
+
+
+
+
+    
+
+      <p class="ingredients__title">Ingredients</p>
+      <ul class="ingredients__list list">
+        <li class="ingredients__item">
+          <p>Milk</p>
+          <p>100ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p>Belgian chocolate</p>
+          <p>20g</p>
+        </li>
+        <li class="ingredients__item">
+          <p>Cream</p>
+          <p>150 ml</p> 
+        </li>
+        <li class="ingredients__item">
+          <p>Cocoa powder</p>
+          <p>30g</p> 
+        </li>
+        <li class="ingredients__item">
+          <p>Sugar</p>
+          <p>40g</p> 
+        </li>
+        <li class="ingredients__item">
+          <p>Vanilla sugar</p>
+          <p>10g</p>
+        </li>
       </ul>
 
-      <h5 class="modal--ingredients-title">Ingredients</h5>
-      <ul>
-        <li>Milk 100ml</li>
-        <li>Belgian chocolate 20g</li>
-        <li>Cream 150 ml</li>
-        <li>Cocoa powder 30g</li>
-        <li>Sugar 40g</li>
-        <li>Vanilla sugar 10g</li>
-      </ul>
 
+      <form action="" class="product-modal__form" autocomplete="off">
 
-      <form action="" class="modal--ingredients-form" autocomplete="off">
-
-        <div class="products--form-field">
-          <label class="form__label" for="name" autofocus>Ім'я</label>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Name" />
+        <div class="product-modal__field">
+          <label class="product-modal__label" for="name" autofocus></label>
+          <input class="product-modal__input" type="text" name="name" id="name" placeholder="Name" />
         </div>
-        <div class="products--form-field">
-          <label class="form__label" for="tel">Телефон</label>
-          <input class="form__input" type="tel" name="tel" id="tel" placeholder="Phone" />
+        <div class="product-modal__field">
+          <label class="product-modal__label" for="tel"></label>
+          <input class="product-modal__input" type="tel" name="tel" id="tel" placeholder="Phone" />
         </div>
 
-        <div class="products--form-field">
-          <label class="form__label" for="comment">Коментар</label>
-          <textarea class="form__area" type="text" name="comment" id="comment" rows="10" placeholder="Comment">
+        <div class="product-modal__textarea">
+          <label class="product-modal__label" for="comment"></label>
+          <textarea class="product-modal__input" type="text" name="comment" id="comment" rows="4" placeholder="Comment">
           </textarea>
         </div>
 
-        <button class="modal__button" type="submit">Submit</button>
+        <button class="product-modal__button btn" type="submit">Submit</button>
       </form>
     </div>
   </div> 

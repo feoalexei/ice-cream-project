@@ -1,5 +1,6 @@
 .advantages {
   padding-bottom: 180px;
+  position: relative;
 
   &__card-set {
     display: flex;
@@ -102,7 +103,7 @@
       line-height: 1.71;
     }
 
-    @include tablet {
+    @include desktop {
       max-width: 368px;
       font-size: 16px;
       line-height: 1.75;

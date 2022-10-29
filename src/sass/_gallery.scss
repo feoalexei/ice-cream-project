@@ -1,19 +1,31 @@
 .double {
+  width: 100%;
   background-image: url(../images/gallery/icecreambg.jpg);
 }
 
 .gallery {
   width: 100%;
-  // height: 100%;
-}
+  height: auto;
+  margin-bottom: 80px;
 
-.gallery-title {
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 704px;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    width: 1013px;
+    margin-bottom: 128px;
+  }
 }
 
 .gallery-list {
   width: 100%;
-  // height: 100%;
+  height: auto;
 }
+
 .image {
   border: 1px solid transparent;
   width: 100%;
@@ -22,46 +34,94 @@
 
 .gallery-image {
   width: 100%;
-
   align-items: center;
 }
 
 // Castomer
 
 .castomer-item {
+  width: 100;
+  height: auto;
+}
+
+.swiper-wrapper {
+  height: auto;
+  text-align: center;
+  // padding: 0 15px;
 }
 
 .castomer-wrap {
   width: 100%;
   margin: 0;
-}
-
-.castomer-item {
-  width: 100;
-  // height: 100%;
-}
-
-.castomer-list {
+  text-align: center;
 }
 
 .castomer-image {
-  align-items: center;
+  margin: auto;
   border-radius: 50%;
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 28px;
+  }
 }
 
-.castomer-text {
+.castomer-box {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
   border: 1px solid transparent;
   border-radius: 10px;
   background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  @media screen and(768px) {
+    max-width: 705px;
+  }
+  @media screen and(1200px) {
+    max-width: 968px;
+  }
+}
+
+.castomer-text {
   padding: 24px 39px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2.6;
+  letter-spacing: 0em;
+
+  @include tablet {
+    max-width: 545px;
+    text-align: center;
+  }
+  @include desktop {
+    max-width: 750px;
+    text-align: center;
+  }
 }
 
 .castomer-name {
   color: $title-text-color;
-  text-align: center;
   font-style: normal;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.85;
   letter-spacing: 0em;
+}
+
+.swiper-pagination {
+  margin-bottom: -14px;
+  @include tablet {
+    margin-bottom: -32px;
+  }
+  @include desktop {
+    margin-bottom: -32px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $background-color !important;
+  margin: 0 10px;
 }

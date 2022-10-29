@@ -50,7 +50,7 @@
         <p class="about__text-item">
           This is enough to choose ice cream and coffee for any mood!
         </p>
-        <button class="btn about__btn">
+        <button class="btn about__btn" type="button" data-modal-open>
           Read more
           <svg class="btn-icon" width="10" height="10">
             <use href="./images/icons.svg#icon-chevron-right"></use>
@@ -60,3 +60,33 @@
     </div>
   </div>
 </section>
+
+<!-- Modal-->
+<div class="modal-backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close-btn" data-modal-close>
+      <svg width="11" height="11">
+        <use href="./images/about/symbol-defs.svg#icon-close"></use>
+        <!-- <use href="./images/icons.svg#icon-chevron-right"></use> -->
+      </svg>
+    </button>
+    <h3 class="modal__title">How it’s made?</h3>
+    <div class="iframe-container">
+      <iframe
+        class="responsive-iframe"
+        width="448"
+        height="215"
+        src="https://www.youtube.com/embed/DkGDi0XXsT4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="modal__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>

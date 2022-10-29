@@ -1,5 +1,6 @@
 .advantages {
-  padding-bottom: 60px;
+  padding-bottom: 180px;
+  position: relative;
 
   &__card-set {
     display: flex;
@@ -7,6 +8,11 @@
     justify-content: center;
     gap: 28px;
     color: $primary-text-color;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 80px;
+    }
   }
 
   &__card {
@@ -16,6 +22,16 @@
     align-items: center;
     justify-content: center;
     padding-top: 66px;
+
+    @include tablet {
+      flex-basis: calc((100% - 2 * 80px) / 3);
+      padding-top: 82px;
+    }
+
+    @include desktop {
+      flex-basis: calc((100% - 2 * 32px) / 3);
+      padding-top: 90px;
+    }
   }
 
   &__card::before {
@@ -58,6 +74,17 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 18px;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.23;
+      margin-bottom: 16px;
+    }
+
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.22;
+    }
   }
 
   &__text {
@@ -68,5 +95,18 @@
     line-height: 1.67;
     text-align: center;
     color: #fcfcfc;
+
+    @include tablet {
+      max-width: 152px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
+    @include desktop {
+      max-width: 368px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
   }
 }

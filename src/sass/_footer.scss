@@ -1,172 +1,193 @@
 .footer {
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 62px;
-    background-color: $background-color;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 62px;
+  background-color: $background-color;
 
-    &__container {
-        display: block;
-        text-align: center;
-        width: 100%;
-        
-        @include mobile {
-            max-width: 480px;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        @include tablet {
-            max-width: 768px;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        @include desktop {
-            max-width: 1200px;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
+  @include tablet {
+    padding-bottom: 13px;
+  }
+  @include desktop {
+    padding-bottom: 11px;
+    position: static;
+  }
+
+  &__container {
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    @include mobile {
+      max-width: 480px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    &__item {
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-bottom: 40px;
-
-        @include tablet {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            padding-right: 32px;
-            padding-left: 32px;
-        }
-        @include desktop {
-            padding-right: 16px;
-            padding-left: 16px;
-        }
+    @include tablet {
+      max-width: 768px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    &__wrap {
-        text-align: left;
-        width: 100%;
-        height: 134px;
-        max-width: 237px;
-        margin-bottom: 42px;
-    
-        @include tablet {
-            margin-bottom: 32px;
-        }
-        @include desktop {
-            margin-bottom: 54px;
-            max-width: 504px;
-        }
+    @include desktop {
+      max-width: 1200px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
     }
+  }
 
-    &__pretitle {
-        margin-bottom: 16px;
-        color: $primary-text-color;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.22;
-        text-transform: uppercase;
-    
-        @include tablet {
-            font-size: 26px;
-            line-height: 1.23;
-            margin-bottom: 9px;
-        }
-        @include desktop {
-            font-weight: 400;
-            font-size: 30px;
-            margin-bottom: 14px;
-        }
+  &__item {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 56px;
+
+    @include tablet {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-right: 32px;
+      padding-left: 32px;
+      margin-bottom: 46px;
     }
-
-    &__title {
-        color: $primary-text-color;
-        font-weight: 700;
-        font-size: 34px;
-        line-height: 1.20;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    
-        @include tablet {
-            font-size: 48px;
-            line-height: 1.22;
-        }
-        @include desktop {
-            font-size: 58px;
-        }
+    @include desktop {
+      padding-right: 16px;
+      padding-left: 16px;
+      margin-bottom: 66px;
     }
+  }
 
-    &__info {
-        display: block;
-        text-align: right;
-       
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.83;
-        white-space: nowrap;
-    
-        @include tablet {
-            font-size: 14px;
-            line-height: 1.86;
-            margin-bottom: 56px;
-        }
-        @include desktop {
-            font-size: 16px;
-            line-height: 1.85;
-            margin-bottom: 60px;
-        }
+  &__wrap {
+    text-align: left;
+    width: 100%;
+    // height: 134px;
+    max-width: 237px;
+    margin-bottom: 42px;
+
+    @include tablet {
+      //   margin-bottom: 32px;
+      margin-bottom: 0;
     }
-
-    &__text {
-        color: $title-text-color;
+    @include desktop {
+      //   margin-bottom: 54px;
+      max-width: 504px;
     }
+  }
 
-    &__tel {
-        color: $primary-text-color;
+  &__pretitle {
+    margin-bottom: 16px;
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.23;
+      margin-bottom: 9px;
     }
-
-    &__line {
-        position: absolute;
-        display: block;
-        bottom: 100px;
-        left: 0;
-        width: 100vw;
-        height: 2px;
-        background-color: $primary-text-color;
-        margin-bottom: 16px;
-        transform: translateY(100%);
-
-        }
-
-    &__inner {
-        color: #7A7A7A;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
-    
-        @include tablet {
-            font-size: 14px;
-            line-height: 1.86;
-            display: flex;
-            padding-top: 14px;
-            align-items: flex-end;
-            justify-content: center;
-        }
-        @include desktop {
-            font-size: 12px;
-            line-height: 1.83;
-        }
+    @include desktop {
+      font-weight: 400;
+      font-size: 30px;
+      margin-bottom: 14px;
     }
+  }
 
-    &__name {
-       
-    
-        @include tablet {
-            padding-right: 6px;
-        }
+  &__title {
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.22;
     }
+    @include desktop {
+      font-size: 58px;
+    }
+  }
+
+  &__info {
+    display: block;
+    text-align: right;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.83;
+    white-space: nowrap;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.86;
+      //   margin-bottom: 56px;
+      margin-bottom: 18px;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.85;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    color: $title-text-color;
+  }
+
+  &__tel {
+    color: $primary-text-color;
+  }
+
+  &__line {
+    position: absolute;
+    display: block;
+    // bottom: 100px;
+    bottom: 120px;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $primary-text-color;
+    // margin-bottom: 16px;
+    transform: translateY(100%);
+
+    @include tablet {
+      bottom: 53px;
+    }
+    @include desktop {
+      max-width: 1167px;
+      bottom: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__inner {
+    color: #7a7a7a;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.86;
+      display: flex;
+      //   padding-top: 14px;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    @include desktop {
+      font-size: 12px;
+      line-height: 1.83;
+    }
+  }
+
+  &__name {
+    @include tablet {
+      padding-right: 6px;
+    }
+  }
 }

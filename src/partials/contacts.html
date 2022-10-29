@@ -1,21 +1,31 @@
 <!-- Section CONTACTS -->
 <h2 class="visually-hidden">Contacts</h2>
-<div class="contacts">
-  <div class="container">
+<div class="section contacts">
+  <div class="container contacts__container">
     <ul class="contacts__list list">
       <li class="contacts__item">
         <div class="contacts__wrap">
-          <p class="contacts__title">Cafe</p>
+          <div class="contacts__title-box">
+            <p class="contacts__title">Cafe</p>
+          </div>
           <address>
-            <span class="contacts__city">Chicago</span>
+            <p class="contacts__city">Chicago</p>
             <p class="contacts__street">
               10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
             </p>
           </address>
-          <span class="contacts__weekdays">Monday - Friday</span>
-          <span class="contacts__weekdays">Saturday - Sunday</span>
-          <span class="contacts__worktime">06:00 AM - 10:00 PM </span>
-          <span class="contacts__worktime">08:00 AM - 16:00 PM </span>
+          <div class="contacts__line"></div>
+          <ul class="contacts__work-list list">
+            <li class="contacts__work-item">
+              <p class="contacts__weekdays">Monday - Friday</p>
+              <time class="contacts__worktime">06:00 AM - 10:00 PM</time>
+            </li>
+            <li class="contacts__work-item">
+              <p class="contacts__weekdays">Saturday - Sunday</p>
+              <time class="contacts__worktime">08:00 AM - 16:00 PM</time>
+            </li>
+          </ul>
+          <div class="contacts__line"></div>
           <div>
             <a class="contacts__link link" href="tel:+">+61(0) 383 766 284 </a>
           </div>
@@ -26,17 +36,27 @@
       </li>
       <li class="contacts__item">
         <div class="contacts__wrap">
-          <p class="contacts__title">Foodtruck</p>
+          <div class="contacts__title-box">
+            <p class="contacts__title">Foodtruck</p>
+          </div>
           <address>
-            <span class="contacts__city">Los Angeles</span>
+            <p class="contacts__city">Los Angeles</p>
             <p class="contacts__street">
               1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
             </p>
           </address>
-          <span class="contacts__weekdays">Monday - Friday</span>
-          <span class="contacts__weekdays">Saturday - Sunday</span>
-          <span class="contacts__worktime">06:00 AM - 10:00 PM </span>
-          <span class="contacts__worktime">08:00 AM - 16:00 PM </span>
+          <div class="contacts__line"></div>
+          <ul class="contacts__work-list list">
+            <li class="contacts__work-item">
+              <p class="contacts__weekdays">Monday - Friday</p>
+              <time class="contacts__worktime">06:00 AM - 10:00 PM</time>
+            </li>
+            <li class="contacts__work-item">
+              <p class="contacts__weekdays">Saturday - Sunday</p>
+              <time class="contacts__worktime">08:00 AM - 16:00 PM</time>
+            </li>
+          </ul>
+          <div class="contacts__line"></div>
           <div>
             <a class="contacts__link link" href="tel:+">+61(0) 383 766 284 </a>
           </div>
@@ -47,17 +67,27 @@
       </li>
       <li class="contacts__item">
         <div class="contacts_wrap">
-          <p class="contacts__title">Cafe</p>
+          <div class="contacts__title-box">
+            <p class="contacts__title">Cafe</p>
+          </div>
           <address>
-            <span class="contacts__city">New York</span>
+            <p class="contacts__city">New York</p>
             <p class="contacts__street">
               726 Sterling Pl, Brooklyn, NY 11222, USA
             </p>
           </address>
-          <span class="contacts__weekdays">Monday - Friday</span>
-          <time class="contacts__worktime">06:00 AM - 10:00 PM</time>
-          <span class="contacts__weekdays">Saturday - Sunday</span>
-          <time class="contacts__worktime">08:00 AM - 16:00 PM</time>
+          <div class="contacts__line"></div>
+          <ul class="contacts__work-list list">
+            <li class="contacts__work-item">
+              <p class="contacts__weekdays">Monday - Friday</p>
+              <time class="contacts__worktime">06:00 AM - 10:00 PM</time>
+            </li>
+            <li class="contacts__work-item">
+              <p class="contacts__weekdays">Saturday - Sunday</p>
+              <time class="contacts__worktime">08:00 AM - 16:00 PM</time>
+            </li>
+          </ul>
+          <div class="contacts__line"></div>
           <div>
             <a class="contacts__link link" href="tel:+">+61(0) 383 766 284 </a>
           </div>
@@ -69,7 +99,13 @@
     </ul>
   </div>
 </div>
-<div>
-  <button type="button" class="button contacts__btn">Our Locations</button>
-  <button type="button" class="button contacts__form">Franchise</button>
-</div>
+<ul class="contacts__button-list list">
+  <li class="contacts__button-item">
+    <button type="button" class="button contacts-map__btn">
+      Our Locations
+    </button>
+  </li>
+  <li class="contacts__button-item">
+    <button type="button" class="button contacts-form__btn">Franchise</button>
+  </li>
+</ul>

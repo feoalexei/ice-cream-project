@@ -203,7 +203,7 @@
   max-width: 568px;
   width: 92vw;
   margin: auto;
-  padding: 20px;
+  padding: 28px;
   background-color: $primary-text-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -213,33 +213,42 @@
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 480px) {
-    padding: 32px;
-  }
-
   @include tablet {
     padding: 32px 60px;
   }
 
   &__title {
     font-family: 'Seymour One';
-    font-size: 20px;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.5;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 32px;
+    }
   }
 
   &__close-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 20px;
-    height: 20px;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
     background-color: #fff;
     fill: $title-text-color;
     padding: 0;
     cursor: pointer;
     border: none;
+
+    @include tablet {
+      right: 20px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+    }
 
     &:hover,
     &:focus {
@@ -247,9 +256,15 @@
     }
   }
   &__text {
-    font-size: 16px;
-    line-height: 1.38;
-    margin-top: 32px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 20px;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 1.38;
+      margin-top: 32px;
+    }
   }
 }
 
@@ -258,6 +273,8 @@
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */

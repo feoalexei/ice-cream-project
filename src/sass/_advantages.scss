@@ -51,6 +51,7 @@
     background-image: url('../images/about/advantages-icon-1.svg');
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -1;
   }
 
   &__card:nth-child(1)::before {

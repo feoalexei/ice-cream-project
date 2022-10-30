@@ -16,6 +16,9 @@ a {
     cursor: pointer;
 }
 
+* {
+    cursor: url("../images/Cursor.png"), pointer;
+    }
 
 ul {
     margin: 0;

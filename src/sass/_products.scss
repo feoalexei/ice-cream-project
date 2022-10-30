@@ -463,11 +463,16 @@
         }
   }
 
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__button {
     margin-top: 32px;
-    position: absolute;
-    bottom: 64px;
-    left: 71px;
+    
 
   @include mobile { 
     left: 143px;

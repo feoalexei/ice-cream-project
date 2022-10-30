@@ -1,0 +1,70 @@
+.header-menu {
+    width: 32px;
+    height: 32px;
+    background: url(../images/hero-header/header-menu.svg);
+    border: 0;
+
+    @include desktop {
+        display: none;
+    }
+
+}
+
+.header-container {
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    @include tablet {
+        padding-top: 20px;
+    }
+    @include desktop {
+        padding-top: 8px;
+    }
+    
+
+    .header-navigation {
+        display: none;
+
+        @include desktop {
+            display: block;
+        }
+
+        .site-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 27px;
+
+            .site-nav-link {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.25;
+                color: #FCFCFC;
+                &:hover {
+                    color: #F8D24E;
+                }
+            }
+        }
+    }
+
+    .header-menu-modal {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .header-btn {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+    }
+}
+
+
+

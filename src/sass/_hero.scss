@@ -23,7 +23,9 @@
                 padding-bottom: 13px;
             }
         @include desktop {
+            padding-top: 35px;
             padding-bottom: 65px;
+
         }    
     }
 
@@ -50,6 +52,7 @@
          @include desktop {
             max-width: 367px;
             font-size: 38px;
+            margin-bottom: 28px;
         }
         
     }
@@ -127,6 +130,10 @@
         display: flex;
         gap: 8px;
 
+        @include desktop {
+            gap: 12;
+        }
+
         .products {
             .products-button {
                 @include primary-button();
@@ -150,6 +157,7 @@
             }
         @include desktop {
             margin-top: 42px;
+            gap: 14px;
         }
         .many-ice-cream {
             animation: slide-in 3s;
@@ -162,10 +170,13 @@
             line-height: 140%;
             color: #FCFCFC;
             max-width: 150px;
+            display: block;
+            margin-bottom: 20px;
 
             @include desktop {
                 max-width: 200px;
                 font-size: 14px;
+                margin-bottom: 32px;
             }
         }
     }
@@ -178,6 +189,9 @@
             .cafes-trucks-item {
                 &:first-of-type {
                     margin-bottom: 20px;
+                    @include desktop {
+                        margin-bottom: 16px;
+                    }
                 }
                 
                 text-align: right;

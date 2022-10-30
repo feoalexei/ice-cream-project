@@ -356,44 +356,41 @@
 
   @include mobile { 
     width: 95%; 
-} 
-
-
+  } 
 
   &__container {
     padding: 28px 20px 32px;
-
+    width: 100%;
       
-  @include mobile { 
-    max-width: 480px; 
-    width: 100%; 
-    margin-left: auto; 
-    margin-right: auto; 
-} 
-@include tablet { 
-    max-width: 568px; 
-    width: 100%; 
-    margin-left: auto; 
-    margin-right: auto; 
-} 
-
+    @include mobile { 
+      max-width: 480px; 
+      width: 100%; 
+      margin-left: auto; 
+      margin-right: auto; 
+    } 
+    @include tablet { 
+      max-width: 568px; 
+      width: 100%; 
+      margin-left: auto; 
+      margin-right: auto; 
+    } 
   }
 
   &__wrap {
     display: flex;
-    gap: 29px;
+    
     margin-bottom: 22px;
+    width: 100%;
+    text-align: center;
 
     @include mobile { 
       justify-content: center;
-      align-items: center;
+      
     } 
 
     @include tablet { 
       margin-bottom: 24px;
     } 
-
-    
   }
 
   &__title  {
@@ -402,7 +399,7 @@
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.04em;
-    text-align: end;
+    // text-align: end;
 
     @include mobile { 
       width: 142px; 
@@ -414,6 +411,7 @@
   }
 
   &__close {
+   
     width: 20px;
     height: 20px;
     border: none;

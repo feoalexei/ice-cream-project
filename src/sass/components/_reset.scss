@@ -13,11 +13,14 @@ span {
 
 a {
     text-decoration: none;
-    cursor: pointer;
+  
 }
 
 * {
-    cursor: url("../images/Cursor.png"), pointer;
+    cursor: url("../images/curs.png"),  pointer;
+    &:active {
+        color: brown;
+    }
     }
 
 ul {

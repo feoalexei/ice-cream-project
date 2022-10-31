@@ -1,6 +1,6 @@
 .advantages {
-  padding-bottom: 180px;
   position: relative;
+  padding-bottom: 180px;
 
   &__card-set {
     display: flex;
@@ -23,6 +23,7 @@
     justify-content: center;
     padding-top: 66px;
     z-index: -1;
+    cursor: pointer;
 
     @include tablet {
       flex-basis: calc((100% - 2 * 80px) / 3);

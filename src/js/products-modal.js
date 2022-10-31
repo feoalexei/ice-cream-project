@@ -1,21 +1,22 @@
 // PRODUCTS MODAL
 (() => {
   const refs = {
-    openProductsModalBtn: document.querySelectorAll("[data-products-modal-open]"),
-    closeProductsModalBtn: document.querySelector("[data-products-modal-close]"),
-    productsModal: document.querySelector("[data-products-modal]"),
+    openModalBtn: document.querySelector("[data-products-modal-open]"),
+    // openModalBtnMob: document.querySelector("[data-products-modal-open-mob]"),
+    closeModalBtn: document.querySelector("[data-products-modal-close]"),
+    modal: document.querySelector("[data-products-modal]"),
   };
-  refs.openProductsModalBtn.addEventListener('click', remove);
-  refs.openProductsModalBtn.addEventListener('click', remove);
-  refs.closeProductsModalBtn.addEventListener("click", add);
+
+  refs.openModalBtn.addEventListener('click', remove);
+  // refs.openModalBtnMob.addEventListener('click', remove);
+  refs.closeModalBtn.addEventListener("click", add);
 
   function remove() {
-    refs.product-modal.classList.remove('is-hidden');
+    refs.modal.classList.remove('is-hidden');
   }
 
   function add() {
-    refs.product-modal.classList.add('is-hidden');
+    refs.modal.classList.add('is-hidden');
   }
-
 
 })();

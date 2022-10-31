@@ -29,7 +29,7 @@
                   <use href="./images/icons.svg#icon-header-menu-open"></use>
               </svg>
           </button>
-          <button class="btn header-btn" data-modal-open>
+          <button class="btn header-btn" data-header-modal-open>
               Buy now
               <svg class="btn-icon" width="12" height="12">
                   <use href="./images/icons.svg#icon-chevron-right"></use>
@@ -42,11 +42,11 @@
           <div class="mob-menu-top">
               <picture>
                   <source srcset="./images/hero-header/header-logo-des.png 1x, ./images/hero-header/header-logo-des-2x.png 2x"
-                      media="(min-width:1200px)" sizes="60px">
+                      media="(min-width:1200px)">
                   <source srcset="./images/hero-header/header-logo-tab.png 1x, ./images/hero-header/header-logo-tab-2x.png 2x"
-                      media="(min-width:768px)" sizes="48px">
+                      media="(min-width:768px)">
                   <source srcset="./images/hero-header/header-logo-mob.png 1x, ./images/hero-header/header-logo-mob-2x.png 2x"
-                      media="(min-width:320px)" sizes="40px">
+                      media="(min-width:320px)">
                   <img src="./images/hero-header/header-logo-des-2x.png" alt="логотип">
               </picture>
               <button class="header-menu-close" data-menu-close>
@@ -70,7 +70,7 @@
                       <a class="site-nav-link-menu" href="#">Contact</a>
                   </li>
               </ul>
-              <button class="btn header-btn" data-modal-open>
+              <button class="btn header-btn" data-header-modal-open-mob>
                   Buy now
                   <svg class="btn-icon" width="12" height="12">
                       <use href="./images/icons.svg#icon-chevron-right"></use>
@@ -81,19 +81,19 @@
   </div>
 
     <!--------------------------------------------------Modal widow----------------------------------->
-    <div class="backdrop__header-modal is-hidden" data-modal>
+    <div class="backdrop__header-modal is-hidden" data-header-modal>
         <div class="header-modal">
           <div class="header-modal__container">
             <!------------------ Close button ----------------->
       
             <div class="header-modal__wrap">
               <p class="header-modal__title">Buy now</p>
-              <button data-modal-close  type="button" class="header-modal__close">
-                <svg width="16" height="16">
-                  <use href="./images/icons.svg#icon-off" ></use>
-                </svg>
-              </button>
             </div>
+            <button data-header-modal-close type="button" class="header-modal__close">
+                <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-off"></use>
+                </svg>
+            </button>
             <!---------------- Modal screen --------->
             <ul class="header-modal__list">
               <li class="header-modal__item header-modal__item--green">
@@ -178,7 +178,7 @@
                     <p class="header-modal__names">Milkshakes</p>
                     </li>
             </ul>
-            <form action="" class="header-modal__form" autocomplete="off">
+            <form class="header-modal__form" autocomplete="off">
               <div class="header-modal__field">
                 <label class="header-modal__label" for="name" autofocus></label>
                 <input
@@ -204,7 +204,6 @@
                 <label class="header-modal__label" for="comment"></label>
                 <textarea
                   class="header-modal__input"
-                  type="text"
                   name="comment"
                   id="comment"
                   rows="4"

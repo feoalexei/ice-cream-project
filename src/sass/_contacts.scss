@@ -168,6 +168,8 @@
   }
 
   &__btn-map {
+    display: flex;
+    justify-content: center;
     min-width: 196;
     height: 42px;
     margin-bottom: 16px;
@@ -182,13 +184,16 @@
 .btn--transparent {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 12px 34px;
-  font-size: 14px;
-  font-family: 'Montserrat';
-  font-weight: 600;
-  line-height: 1.29;
   min-width: 196;
   height: 42px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
   color: $title-text-color;
   background-color: $background-color;
   border: 2px solid #f8d24e;

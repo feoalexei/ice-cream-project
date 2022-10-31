@@ -3,7 +3,11 @@
     <p class="section-subtitle about__section-subtitle">tradition and love</p>
     <h2 class="section-title about__section-title">how it’s made?</h2>
     <div class="about__content">
-      <div class="about__figure">
+      <audio id="myAudio">
+        <source src="./images/about/mixkit-cow-moo-1744.wav" type="audio/wav" />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="about__figure" onclick="playAudio()">
         <picture>
           <source
             srcset="
@@ -89,3 +93,12 @@
     </p>
   </div>
 </div>
+
+<script>
+  const moo = document.getElementById('myAudio');
+  const figure = document.querySelector('.about__figure');
+
+  function playAudio() {
+    moo.play();
+  }
+</script>

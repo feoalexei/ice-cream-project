@@ -1,4 +1,4 @@
-<header>
+<header class="header">
     <div class="container header-container">
         <picture>
             <source srcset="./images/hero-header/header-logo-des.png 1x, ./images/hero-header/header-logo-des-2x.png 2x" media="(min-width:1200px)" sizes="60px">
@@ -13,7 +13,7 @@
                     <a class="site-nav-link" href="#">Home</a>
                 </li>
                 <li class="site-nav-item">
-                    <a class="site-nav-link" href="#">How it’s made?</a>
+                    <a class="site-nav-link" href="#about">How it’s made?</a>
                 </li>
                 <li class="site-nav-item">
                     <a class="site-nav-link" href="#">Our products</a>
@@ -24,7 +24,11 @@
             </ul>
         </div>
         <div class="header-menu-modal">
-            <button class="header-menu"></button>
+            <button class="header-menu-open" data-menu-open>
+                <svg class="icon-header-menu-open" width="32" height="32">
+                    <use href="./images/icons.svg#icon-header-menu-open"></use>
+                </svg>
+            </button>
             <button class="btn header-btn">
                 Buy now
                 <svg class="btn-icon" width="12" height="12">
@@ -32,6 +36,47 @@
                 </svg>
             </button>
         </div>
-        
+    </div>
+    <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+            <div class="mob-menu-top">
+                <picture>
+                    <source srcset="./images/hero-header/header-logo-des.png 1x, ./images/hero-header/header-logo-des-2x.png 2x"
+                        media="(min-width:1200px)" sizes="60px">
+                    <source srcset="./images/hero-header/header-logo-tab.png 1x, ./images/hero-header/header-logo-tab-2x.png 2x"
+                        media="(min-width:768px)" sizes="48px">
+                    <source srcset="./images/hero-header/header-logo-mob.png 1x, ./images/hero-header/header-logo-mob-2x.png 2x"
+                        media="(min-width:320px)" sizes="40px">
+                    <img src="./images/hero-header/header-logo-des-2x.png" alt="логотип">
+                </picture>
+                <button class="header-menu-close" data-menu-close>
+                    <svg class="icon-header-menu-close" width="32" height="32">
+                        <use href="./images/icons.svg#icon-header-menu-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mob-menu-bottom">
+                <ul class="site-nav-menu">
+                    <li class="site-nav-item-menu">
+                        <a class="site-nav-link-menu" href="#">Home</a>
+                    </li>
+                    <li class="site-nav-item-menu">
+                        <a class="site-nav-link-menu" href="#about">How it’s made?</a>
+                    </li>
+                    <li class="site-nav-item-menu">
+                        <a class="site-nav-link-menu" href="#">Our products</a>
+                    </li>
+                    <li class="site-nav-item-menu">
+                        <a class="site-nav-link-menu" href="#">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn header-btn">
+                    Buy now
+                    <svg class="btn-icon" width="12" height="12">
+                        <use href="./images/icons.svg#icon-chevron-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
 </header>

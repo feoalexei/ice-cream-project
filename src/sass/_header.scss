@@ -1,8 +1,11 @@
-.header-menu {
-    width: 32px;
-    height: 32px;
-    background: url(../images/hero-header/header-menu.svg);
-    border: 0;
+.header {
+        position: relative;
+        z-index: 999;
+}
+
+.header-menu-open {
+   background-color: transparent;
+   border: 0;
 
     @include desktop {
         display: none;
@@ -64,6 +67,88 @@
             display: block;
         }
     }
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #85A279;
+    padding-top: 12px;
+    padding-bottom: 63px;
+    transform: translateX(0);
+    transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 250ms ease-in-out;
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transform: translateX(100%);
+    }
+
+    @include tablet {
+        padding-top: 20px;
+    }
+    @include desktop {
+        display: none;
+    }
+    
+
+    .mob-menu-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 52px;
+        @include tablet {
+            margin-bottom: 76px;
+        }
+
+        .header-menu-close {
+            background-color: transparent;
+            border: none;
+            display: block;
+            }
+    }
+
+    .mob-menu-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 84%;
+
+        .site-nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 32px;
+            @include tablet {
+                gap: 40px;
+            }
+        
+            .site-nav-link-menu {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 1.21;
+                color: #FCFCFC;
+    
+                &:hover {
+                    color: #131313;
+                }
+                @include tablet {
+                    font-size: 48px;
+                }
+            }
+        }
+        .header-btn {
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+
 }
 
 

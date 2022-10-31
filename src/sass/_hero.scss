@@ -302,12 +302,8 @@
       width: 100%;
       text-align: center;
   
-      @include mobile {
-        justify-content: center;
-      }
-  
       @include tablet {
-        margin-bottom: 24px;
+        margin-bottom: 103px;
       }
     }
   
@@ -340,22 +336,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        // gap: 20px;
+       
       
-        @include mobile {
-          display: block;
-        }
       
         @include tablet {
-          display: flex;
-          gap: 16px;
-        }
-      
-        @include desktop {
-          display: flex;
+        flex-direction: row;
           gap: 32px;
-      
+          margin-bottom: 40px;
         }
+      
+       
       }
 
     &__item {
@@ -371,26 +361,22 @@
         margin-bottom: 84px;
       
         @include mobile {
-          width: 280px;
-          height: 420px;
-          display: block;
+            width: 132px;
+            height: 136px;
+          
         }
       
         @include tablet {
-          width: 224px;
-          height: 428px;
-          margin-bottom: 82px;
+          width: 132px;
+          height: 135px;
+          margin-bottom: 0;
         }
       
-        @include desktop {
-          width: 370px;
-          height: 535px;
-          margin-bottom: 66px;
-      
-        }
+        
 
         &--green {
             border: 2px solid #96AF8C;
+            box-shadow: inset 0 6px 20px 0 rgba(10, 136, 23, 0.25);
         }
 
         &--yellow {
@@ -400,14 +386,15 @@
         }
         &--orange {
             border: 2px solid rgba(214, 147, 109, 1);
+            box-shadow: inset 0 6px 20px 0 rgba(213, 117, 63, 0.7), #D9D9D9;
         }
-        &:first-child {
-  
-            background: transparent;
-          }
         
           &:last-child {
-            margin-bottom: 60px;
+            margin-bottom: 24px;
+
+            @include tablet {
+                margin-bottom: 0;
+              }
             
           }
         }
@@ -421,16 +408,12 @@
       
       
         @include tablet {
-          top: -108px;
-          left: 12px;
+            top: -6px;
+            left: 4px;
       
         }
       
-        @include desktop {
-          top: -183px;
-          left: 35px;
-      
-        }
+       
       }
 
     &__foto {
@@ -442,11 +425,7 @@
           border-radius: 98px;
         }
       
-        @include desktop {
-          width: 301px;
-          border-radius: 150px;
-      
-        }
+     
       }
 
 
@@ -467,6 +446,12 @@
         box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
         margin-left: auto;
         margin-right: auto;
+
+        @include tablet {
+            top: -41px;
+            left: -3px;
+      
+        }
     }
 
     &__circle-yellow {
@@ -484,19 +469,11 @@
             //   left: 40px;
           
             @include tablet {
-              top: -98px;
-              left: 12px;
+                top: -41px;
+                left: -3px;
           
             }
-          
-            @include desktop {
-              height: 302px;
-              width: 302px;
-              top: -166px;
-              left: 35px;
-              border-radius: 150px;
-          
-            }
+       
           }
 
     &__circle-orange {
@@ -514,17 +491,8 @@
             //   left: 40px;
           
             @include tablet {
-              top: -98px;
-              left: 12px;
-          
-            }
-          
-            @include desktop {
-              height: 302px;
-              width: 302px;
-              top: -166px;
-              left: 35px;
-              border-radius: 150px;
+                top: -41px;
+                left: -3px;
           
             }
           }
@@ -540,22 +508,6 @@
         padding-top: 105px;
         padding-bottom: 34px;
         color: $title-text-color;
-      
-        @include mobile {
-          display: block;
-        }
-      
-        @include tablet {
-          font-size: 22px;
-          padding-top: 106px;
-          padding-bottom: 39px;
-        }
-      
-        @include desktop {
-          padding-top: 165px;
-          padding-bottom: 65px;
-          font-size: 30px;
-        }
       }
 
 
@@ -574,11 +526,17 @@
     &__field {
       position: relative;
       display: block;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
+      @include tablet {
+        margin-bottom: 16px;
+      }
     }
   
     &__textarea {
-      margin-bottom: 0;
+      margin-bottom: 24px;
+      @include tablet {
+        margin-bottom: 32px;
+      }
     }
   
     &__input {
@@ -610,20 +568,10 @@
     }
   
     &__button {
-      margin-top: 32px;
-  
-      @include mobile {
-        left: 143px;
-        bottom: 64px;
-      }
-  
-      @include tablet {
-        bottom: 80px;
-        left: 295px;
-      }
-      @include desktop {
-        left: 511px;
-      }
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        text-align: center;
     }
 }
 

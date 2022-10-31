@@ -1,98 +1,151 @@
-
 <!----------------------------------------Product section ----------------------------------------------->
-<section id="products-section" class="products products-background">
-  <p class="products-pretittle">
-    100% natural
-  </p>
-  <h2 class="product-title">Products</h2>
+<section class="products products-background">
+  <p class="products-pretittle">100% natural</p>
+  <section id="products-section" class="products products-background">
+    <p class="products-pretittle">100% natural</p>
+    <h2 class="product-title">Products</h2>
 
-  <ul class="products-list">
-    <li class="products-item">
-      <div class="product--circle-green"></div>
-      <div class="product--foto-container">
+    <ul class="products-list">
+      <li class="products-item">
+        <div class="product--circle-green"></div>
+        <div class="product--foto-container">
+          <picture class="products--foto">
+            <source
+              class="products--foto"
+              srcset="
+                /src/images/product/ice-cream.jpg    1x,
+                /src/images/product/ice-cream-2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              class="products--foto"
+              srcset="
+                /src/images/product/tablet/ice-cream-tablet.jpg    1x,
+                /src/images/product/tablet/ice-cream-tablet-2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              class="products--foto"
+              srcset="
+                /src/images/product/mobile/ice-cream-mobile.jpg    1x,
+                /src/images/product/mobile/ice-cream-mobile-2x.jpg 2x
+              "
+              media="(min-width:480px)"
+            />
+            <img
+              class="products--foto"
+              src="/src/images/product/ice-cream.jpg"
+              alt="Three ice-cream balls"
+            />
+          </picture>
+        </div>
+        <h3 class="products-names">Ice cream</h3>
+        <p class="products-about">
+          Soft ice cream with a delicate taste. Made with milk, cream, sugar and
+          natural stabilizer
+        </p>
+        <a href="#" class="products_arrow"
+          ><img src="/src/images/product/product-arrow.png" alt=""
+        /></a>
+      </li>
+      <li class="products-item">
+        <div class="product--circle-yellow"></div>
+        <div class="product--foto-container">
+          <picture>
+            <source
+              srcset="
+                /src/images/product/ice-coffe.jpg   1x,
+                /src/images/product/ice-coffe2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                /src/images/product/tablet/ice-coffe-tablet.jpg    1x,
+                /src/images/product/tablet/ice-coffe-tablet-2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                /src/images/product/mobile/ice-coffe-mobile.jpg    1x,
+                /src/images/product/mobile/ice-coffe-mobile-2x.jpg 2x
+              "
+              media="(min-width:480px)"
+            />
+            <img
+              class="products--foto"
+              src="/src/images/product/ice-coffe.jpg"
+              alt="Three ice-cream balls"
+            />
+          </picture>
+        </div>
+        <h3 class="products-names">Ice coffee</h3>
+        <p class="products-about">
+          Fragrant invigorating drink created from 100% natural ingredients
+          without the use of preservatives and flavor enhancers
+        </p>
+        <a href="#" class="products_arrow"
+          ><img src="/src/images/product/product-arrow.png" alt=""
+        /></a>
+      </li>
+      <li class="products-item">
+        <div class="product--circle-orange"></div>
+        <div class="product--foto-container">
+          <picture>
+            <source
+              srcset="
+                /src/images/product/milkshakes.jpg    1x,
+                /src/images/product/milkshakes-2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                /src/images/product/tablet/milkshakes-tablet.jpg    1x,
+                /src/images/product/tablet/milkshakes-tablet-2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                /src/images/product/mobile/milkshakes-mobile.jpg    1x,
+                /src/images/product/mobile/milkshakes-mobile-2x.jpg 2x
+              "
+              media="(min-width:480px)"
+            />
+            <img
+              class="products--foto"
+              src="/src/images/product/milkshakes.jpg"
+              alt="Big cup with milkshake"
+            />
+          </picture>
+        </div>
+        <h3 class="products-names">Milkshakes</h3>
+        <p class="products-about">
+          Sweet drinks based on milk and ice cream, supplemented with syrups,
+          fruits, berries and other sweets of your choice
+        </p>
+        <a href="#" class="products_arrow"
+          ><img src="/src/images/product/product-arrow.png" alt=""
+        /></a>
+      </li>
+    </ul>
 
-        <picture class="products--foto">
-          <source class="products--foto" srcset="
-              /src/images/product/ice-cream.jpg 1x,
-              /src/images/product/ice-cream-2x.jpg 2x" media="(min-width:1200px)" />
-          <source class="products--foto" srcset="
-              /src/images/product/tablet/ice-cream-tablet.jpg 1x,
-              /src/images/product/tablet/ice-cream-tablet-2x.jpg 2x" media="(min-width:768px)" />
-          <source class="products--foto" srcset="
-              /src/images/product/mobile/ice-cream-mobile.jpg 1x,
-              /src/images/product/mobile/ice-cream-mobile-2x.jpg 2x" media="(min-width:480px)" />
-          <img class="products--foto" src="/src/images/product/ice-cream.jpg" alt="Three ice-cream balls">
-        </picture>
+    <!--------------------------------------------------Modal widow----------------------------------->
 
-      </div>
-      <h3 class="products-names">Ice cream</h3>
-      <p class="products-about">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
-        stabilizer
-      </p>
-      <a href="#" class="products_arrow"><img src="/src/images/product/product-arrow.png" alt=""></a>
-    </li>
-    <li class="products-item">
-      <div class="product--circle-yellow"></div>
-      <div class="product--foto-container">
-        <picture>
-          <source srcset="
-              /src/images/product/ice-coffe.jpg 1x,
-              /src/images/product/ice-coffe2x.jpg 2x" media="(min-width:1200px)" />
-          <source srcset="
-              /src/images/product/tablet/ice-coffe-tablet.jpg 1x,
-              /src/images/product/tablet/ice-coffe-tablet-2x.jpg 2x" media="(min-width:768px)" />
-          <source srcset="
-              /src/images/product/mobile/ice-coffe-mobile.jpg 1x,
-              /src/images/product/mobile/ice-coffe-mobile-2x.jpg 2x" media="(min-width:480px)" />
-          <img class="products--foto" src="/src/images/product/ice-coffe.jpg" alt="Three ice-cream balls">
-        </picture>
-      </div>
-      <h3 class="products-names">Ice coffee</h3>
-      <p class="products-about">Fragrant invigorating drink created from 100% natural ingredients without the use of
-        preservatives and flavor enhancers
-      </p>
-      <a href="#" class="products_arrow"><img src="/src/images/product/product-arrow.png" alt=""></a>
-
-    </li>
-    <li class="products-item">
-      <div class="product--circle-orange"></div>
-      <div class="product--foto-container">
-        <picture>
-          <source srcset="
-              /src/images/product/milkshakes.jpg 1x,
-              /src/images/product/milkshakes-2x.jpg 2x" media="(min-width:1200px)" />
-          <source srcset="
-              /src/images/product/tablet/milkshakes-tablet.jpg 1x,
-              /src/images/product/tablet/milkshakes-tablet-2x.jpg 2x" media="(min-width:768px)" />
-          <source srcset="
-              /src/images/product/mobile/milkshakes-mobile.jpg 1x,
-              /src/images/product/mobile/milkshakes-mobile-2x.jpg 2x" media="(min-width:480px)" />
-          <img class="products--foto" src="/src/images/product/milkshakes.jpg" alt="Big cup with milkshake">
-        </picture>
-      </div>
-      <h3 class="products-names">Milkshakes</h3>
-      <p class="products-about">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries
-        and
-        other sweets of your choice
-      </p>
-      <a href="#" class="products_arrow"><img src="/src/images/product/product-arrow.png" alt=""></a>
-
-    </li>
-  </ul>
-
-
-  <!--------------------------------------------------Modal widow----------------------------------->
-
-  <!-- <div class="product--modal">
+    <!-- <div class="product--modal">
     <div class="product--modal__container">
-      <!------------------ Close button ----------------->
-      <!-- <button type="button" class="products--modal-close" data-modal-close>
+      <---------------- Close button ----------------->
+    <!-- <button type="button" class="products--modal-close" data-modal-close>
         <svg class="close__logo">
           <use href="/src/images/product/close-cross.svg"></use>
         </svg> </button> -->
 
-      <!---------------- Modal screen --------->
-      <!-- <h4 class="modal--product-title">Chololate icecream</h4>
+    <!---------------- Modal screen --------->
+    <!-- <h4 class="modal--product-title">Chololate icecream</h4>
       <picture>
         <source />
         <source />
@@ -138,9 +191,5 @@
       </form>
     </div>
   </div> -->
-
-
-
+  </section>
 </section>
-
-

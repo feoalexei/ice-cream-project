@@ -1,13 +1,13 @@
 .double {
   width: 100%;
   background-color: #f5f5f5;
-  background-image: url(../images/gallery/icecreambg.png);
+  background-image: url(../images/gallery/icecreambg-pgn.png);
 }
 
-// .container {
-//   padding-right: 15px;
-//   padding-left: 15px;
-// }
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 .gallery {
   width: 100%;
@@ -48,7 +48,7 @@
 .image-item {
   border: 1px solid transparent;
   width: 100%;
-  border-radius: 9px;
+  border-radius: 8px;
   @include tablet {
     border-radius: 24px;
   }

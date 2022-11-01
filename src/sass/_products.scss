@@ -24,6 +24,14 @@
   align-items: center;
 }
 
+.products-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
 .products-pretittle {
   color: $title-text-color;
   font-size: 18px;
@@ -364,13 +372,14 @@
   overflow-y: scroll;
 
   @include mobile {
-    width: 95%;
+    max-width: 568px;
   }
 
   &__container {
     padding: 28px 20px 32px;
     width: 100%;
     height: auto;
+   
 
     @include mobile {
       max-width: 280px;

@@ -184,3 +184,170 @@
   height: 42px;
   border: 2px solid #f8d24e;
 }
+
+//** ------------------------- Modal Window------------------- 
+.backdrop__header-modal { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 5; 
+  background-color: rgba(0,0,0,.2);; 
+  opacity: 1; 
+  transition-property: opacity; 
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+  &.is-hidden { 
+      opacity: 0; 
+      pointer-events: none; 
+      visibility: hidden; 
+  } 
+
+  &.is-hidden .header-modal { 
+      transform: translate(-50%, -50%) scale(0.5); 
+  } 
+} 
+
+.contact-modal { 
+  width: 568px; 
+  height: 100%; 
+  background-color: $primary-text-color; 
+  border: 2px solid $accent-color; 
+  border-radius: 10px; 
+  top: 0; 
+  left: 20px; 
+  animation-fill-mode: none; 
+  opacity: 1; 
+  z-index: 5; 
+
+  &__container { 
+  padding: 28px; 
+  width: 100%; 
+
+  @include mobile { 
+      max-width: 480px; 
+      width: 100%; 
+      margin-left: auto; 
+      margin-right: auto; 
+  } 
+  @include tablet { 
+      max-width: 568px; 
+      width: 100%; 
+      margin-left: auto; 
+      margin-right: auto; 
+  } 
+  } 
+
+  &__wrap { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    margin-bottom: 84px; 
+    width: 100%; 
+    text-align: center; 
+ 
+    @include tablet { 
+      margin-bottom: 103px; 
+    } 
+  } 
+ 
+  &__text { 
+      color: $title-text-color;  
+      font-family: Seymour One; 
+      font-size: 16px; 
+      line-height: 1.5; 
+ 
+    @include mobile { 
+      width: 142px; 
+    } 
+    @include tablet { 
+      width: 100%; 
+      font-size: 20px; 
+      line-height: 1.4; 
+    } 
+  } 
+ 
+  &__close { 
+    position: absolute; 
+    top: 10px; 
+    right: 242px; 
+    width: 20px; 
+    height: 20px; 
+    border: none; 
+    background-color: transparent; 
+  }
+  &__form { 
+    width: 240px; 
+    max-width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+ 
+    @include tablet { 
+      width: 368px; 
+    } 
+  } 
+ 
+  &__field { 
+    position: relative; 
+    display: block; 
+    margin-bottom: 12px; 
+    @include tablet { 
+      margin-bottom: 16px; 
+    } 
+  } 
+ 
+  &__textarea { 
+    margin-bottom: 24px; 
+    @include tablet { 
+      margin-bottom: 32px; 
+    } 
+  } 
+ 
+  &__input { 
+    width: 100%; 
+    margin: 0; 
+    padding: 11px 10px; 
+    resize: none; 
+ 
+    font-family: $base-font-family; 
+    border: 1px solid rgba(132, 161, 120, 1); 
+    border-radius: 10px; 
+    background-color: rgba(248, 210, 78, 0.1); 
+     
+ 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+ 
+    &:focus, 
+    &:hover { 
+      border: 1px solid $accent-color; 
+    } 
+
+    &::placeholder { 
+      color: $title-text-color; 
+ 
+      font-size: 14px; 
+      line-height: 1.4; 
+    } 
+  } 
+ 
+  &__inner { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+  } 
+ 
+  &__button { 
+      font-weight: 600; 
+      font-size: 12px; 
+      line-height: 1.25; 
+      text-align: center; 
+  } 
+}

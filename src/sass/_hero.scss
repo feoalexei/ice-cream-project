@@ -161,9 +161,9 @@
         }
         .many-ice-cream {
             animation: slide-in 3s;
-            // &:hover {
-            //     animation: spin 1s ease infinite;
-            // }
+            &:hover {
+                animation: spin 1s ease infinite;
+            }
         }
         .hero-lorem-ipsum-text {
             font-family: 'Montserrat';
@@ -258,15 +258,15 @@
     to {transform: none;}
 }
 
-// @keyframes spin {
-//     from {
-//         transform: rotate(0deg);
-//     }
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
 
-//     to {
-//         transform: rotate(360deg);
-//     }
-// }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 

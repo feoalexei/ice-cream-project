@@ -4,30 +4,37 @@
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
+  margin-top: -345px;
+  @include tablet {
+    margin-top: -304px;
+  }
+  @include desktop {
+    margin-top: -96px;
+  }
 
   &__container {
-    position: relative;
+    // position: relative;
     padding-bottom: 40px;
-    margin-bottom: 1200px;
+    // margin-bottom: 1200px;
     @include tablet {
-      margin-bottom: 400px;
+      // margin-bottom: 400px;
     }
     @include desktop {
       padding-bottom: 120px;
-      margin-bottom: 320px;
+      // margin-bottom: 320px;
     }
   }
 
-  &__position {
-    position: absolute;
-    top: -200px;
-    @include tablet {
-      top: -200px;
-    }
-    @include desktop {
-      top: -200px;
-    }
-  }
+  // &__position {
+  //   position: absolute;
+  //   top: -200px;
+  //   @include tablet {
+  //     top: -200px;
+  //   }
+  //   @include desktop {
+  //     top: -200px;
+  //   }
+  // }
 
   &__list {
     display: flex;
@@ -253,7 +260,7 @@
 // }
 
 //------------- Modal Modal Window Alexei--------------
-.modal-backdrop {
+.contacts-modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -267,17 +274,17 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+// .modal-backdrop.is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
 
-.modal-backdrop.is-hidden .modal {
-  transform: scale(0.9);
-}
+// .modal-backdrop.is-hidden .modal {
+//   transform: scale(0.9);
+// }
 
-.modal {
+.contacts-modal {
   position: relative;
   z-index: 999;
   max-width: 568px;
@@ -368,6 +375,47 @@
   height: 100%;
 }
 
+.contacts-modal-wrap {
+  display: flex;
+  justify-content: center;
+}
+.contacts-modal__map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 42px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: $primary-text-color;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.22;
+  text-align: center;
+  margin-top: 24px;
+
+  @include tablet {
+    margin-top: 36px;
+    width: 145px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+.contacts-modal__link {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: $title-text-color;
+  font-size: 12px;
+  line-height: 1.22;
+  text-align: center;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
 //** ------------------------- Modal Window-------------------
 //     .backdrop__header-modal {
 //     position: fixed;

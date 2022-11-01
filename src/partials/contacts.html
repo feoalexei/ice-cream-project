@@ -115,7 +115,7 @@
           <button
             type="button"
             class="btn contacts__btn-map"
-            data-contacts-modal-map-open
+            data-contacts-modal-open
           >
             Our Locations
             <svg class="btn-icon" width="10" height="10">
@@ -127,7 +127,7 @@
           <button
             type="button"
             class="btn--transparent"
-            data-contacts-modal-form-open
+            data-contacts-modal-open
           >
             Franchise
             <svg class="btn-icon" width="10" height="10">
@@ -141,36 +141,38 @@
 </section>
 <!-- ---------------- MODAL WINDOWS --------------------- -->
 <!---------------------- MAP ----------------------------->
-<div class="modal-backdrop is-hidden" data-contacts-modal>
-  <div class="modal">
+<div class="contacts-modal-backdrop is-hidden" data-contacts-modal>
+  <div class="contacts-modal">
     <button class="modal__close-btn" type="button" data-contacts-modal-close>
       <svg width="11" height="11">
         <use href="./images/about/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
-    <h3 class="modal__title">Our Locations</h3>
+    <h3 class="contacts-modal__title">Our Locations</h3>
     <div class="iframe-container">
       <iframe
         class="responsive-iframe"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1656.0957455085852!2d-118.4118145!3d33.8847218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b3eb826efffd%3A0x3688885d993893ce!2sManhattan%20Beach%20Creamery!5e0!3m2!1sru!2sua!4v1667296491043!5m2!1sru!2sua"
-        width="600"
-        height="450"
+        width="448"
+        height="260"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-
-    <div class="contacts-map">
-      <a
-        class="contacts-map__link link"
-        href="https://goo.gl/maps/rnpJikCkfu1UULSJA"
-        target="_blank"
-        >Open map</a
-      >
+    <div class="contacts-modal-wrap">
+      <div class="contacts-modal__map">
+        <a
+          class="contacts-modal__link link"
+          href="https://goo.gl/maps/rnpJikCkfu1UULSJA"
+          target="_blank"
+          >Open map</a
+        >
+      </div>
     </div>
   </div>
+  <script src="./js/contacts-modal.js"></script>
 </div>
 
 <!---------------------MODAL FORM ------------------------>
@@ -256,5 +258,5 @@
       </div>
     </div>
   </div> -->
-<!-- <script src="./js/contacts-modal.js"></script>
+<!-- 
 </div> -->

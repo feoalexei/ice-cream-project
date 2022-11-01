@@ -268,6 +268,7 @@
   height: 100%;
   display: flex;
   cursor: not-allowed;
+  z-index: 5;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -286,7 +287,7 @@
 
 .contacts-modal {
   position: relative;
-  z-index: 999;
+  z-index: 1200;
   max-width: 568px;
   width: 92vw;
   margin: auto;
@@ -448,7 +449,7 @@
   position: relative;
   max-width: 280px;
   width: 100%; 
-  max-height: 668px; 
+
   background-color: $primary-text-color; 
   border: 2px solid $accent-color; 
   border-radius: 10px; 
@@ -519,7 +520,7 @@
     
     @include tablet {
       top: 20px;
-      left: 622px;
+      left: 524px;
     }
    
   }

@@ -448,11 +448,11 @@
 .contact-modal { 
   position: fixed;
   width: 88%;
-  height: 680px;
+  height: 653px;
   background-color: $primary-text-color;
   border: 2px solid $accent-color;
   border-radius: 10px;
-  top: 0;
+  top: 140px;
   animation-fill-mode: none;
   opacity: 1;
   z-index: 2;

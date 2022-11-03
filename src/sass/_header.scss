@@ -191,15 +191,10 @@ transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 2
   animation-fill-mode: none;
   opacity: 1;
   z-index: 2;
-  overflow-y: scroll;
 
   @include mobile {
     max-width: 568px;
   }
-  @include tablet {
-    height: auto;   
-    }
-
 
     &__container {
     padding: 28px;
@@ -269,16 +264,12 @@ transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 2
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
-      
-      
+
         @include tablet {
         flex-direction: row;
           gap: 32px;
           margin-bottom: 40px;
         }
-      
-       
       }
 
     &__item {
@@ -343,18 +334,18 @@ transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 2
         @include tablet {
             top: -6px;
             left: 4px;
-      
         }
-      
-       
       }
 
     &__foto {
         text-align: center;
         border-radius: 101px;
         width: 131px;
+        transition: animation 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
         &:hover {
             animation: jump 1s ease infinite;
+            cursor: pointer;
         }
     }
 
@@ -380,7 +371,6 @@ transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 2
         @include tablet {
             top: -41px;
             left: -3px;
-      
         }
     }
 
@@ -396,14 +386,11 @@ transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 2
             top: -46px;
             left: -2px;
             z-index: 0;
-            //   left: 40px;
           
             @include tablet {
                 top: -41px;
                 left: -3px;
-          
             }
-       
           }
 
     &__circle-orange {
@@ -418,15 +405,12 @@ transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 2
             top: -46px;
             left: -2px;
             z-index: 0;
-            //   left: 40px;
           
             @include tablet {
                 top: -41px;
                 left: -3px;
-          
             }
           }
-
 
     &__names {
         font-weight: 700;
@@ -439,8 +423,6 @@ transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 2
         padding-bottom: 34px;
         color: $title-text-color;
       }
-
-
 
     &__form {
       width: 240px;
@@ -480,17 +462,18 @@ transition: transform 250ms ease-in-out, visibility 250ms ease-in-out, opacity 2
       border-radius: 10px;
       background-color: rgba(248, 210, 78, 0.1);
       
-  
       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   
       &:focus,
       &:hover {
         border: 1px solid $accent-color;
+        cursor: pointer;
       }
 
       &::placeholder {
         color: $title-text-color;
+        cursor: pointer;
   
         font-size: 14px;
         line-height: 1.4;

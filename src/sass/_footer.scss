@@ -1,6 +1,5 @@
 .footer {
   position: relative;
- 
   padding-bottom: 62px;
   background-color: $background-color;
 
@@ -61,16 +60,13 @@
   &__wrap {
     text-align: left;
     width: 100%;
-    // height: 134px;
     max-width: 237px;
     margin-bottom: 42px;
 
     @include tablet {
-      //   margin-bottom: 32px;
       margin-bottom: 0;
     }
     @include desktop {
-      //   margin-bottom: 54px;
       max-width: 504px;
     }
   }

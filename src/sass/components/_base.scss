@@ -22,15 +22,15 @@ body {
     margin: 0 auto;
 
     @include mobile {
-        width: 480px;
+        max-width: 480px;
     }
     @include tablet {
-        width: 768px;
+        max-width: 768px;
         padding-right: 32px;
         padding-left: 32px;
     }
     @include desktop {
-        width: 1200px;
+        max-width: 1200px;
         padding-right: 16px;
         padding-left: 16px;
     }

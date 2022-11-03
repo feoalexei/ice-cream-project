@@ -71,6 +71,7 @@
     }
 
     @include desktop {
+      align-items: center;
       margin-bottom: 89px;
     }
   }
@@ -168,7 +169,7 @@
       max-width: 463px;
       font-size: 14px;
       line-height: 1.93;
-      padding-top: 90px;
+      padding-top: 0;
     }
 
     &-item:first-of-type {

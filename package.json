@@ -1,15 +1,15 @@
 {
-  "name": "parcel-project-template",
+  "name": "ice-cream-project",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://feoalexei.github.io/ice-cream-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Ice-Cream/"
+    "build": "parcel build src/*.html --public-url /ice-cream-project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feoalexei/ice-cream-project.git"
+    "url": "git+https://github.com/MariKa2525/Ice-Cream.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
